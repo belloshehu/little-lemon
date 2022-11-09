@@ -50,6 +50,10 @@ nav a:hover {
     color: #444;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 main section:first-child {
     width: 100%;
     height: 300px;
