@@ -11,14 +11,15 @@ body {
     margin: 2% 5%;
     overflow-x: hidden;
     background-color: rgba(50, 50, 50, 0.3);
-    font-size: 8px;
+    font-size: 18px;
+    line-height: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header > img {
     display: block;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     margin: 0% auto;
     margin-bottom: 30px;
 }
@@ -51,7 +52,7 @@ nav a:hover {
 
 main section:first-child {
     width: 100%;
-    height: 200px;
+    height: 300px;
     position: relative;
 }
 
@@ -69,18 +70,8 @@ main section:first-child article {
     position: absolute;
 }
 
-main section:first-child img~p{
-    text-align: right;
-    vertical-align: middle;
-
-}
-main section:first-child article img {
-    float: left;
-    clear: both;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px 5px white;
+main section:first-child article p {
+    text-align: center;
 }
 
 .overlay {
@@ -96,9 +87,10 @@ main section:first-child article img {
 
 h1 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bolder;
     text-align: center;
+    font-family: monospace, cursive;
 }
 
 .flex-container {
@@ -106,7 +98,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 
 .flex-container article{
@@ -122,7 +114,7 @@ h1 {
 }
 .flex-container article img{
     width: 100%;
-    height: 150px;
+    height: 250px;
 }
 
 .flex-container article h3 {
@@ -138,14 +130,13 @@ h1 {
 
 .btn-block {
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 10px 25px;
     display: block;
     background-color: #668866;
     color: white;
     width: 100%;
     border: none;
     outline: none;
-    font-size: 0.5rem;
     margin: 10px 0;
 }
 footer {
@@ -161,4 +152,11 @@ footer div{
 footer img {
     width: 200px;
     height: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
